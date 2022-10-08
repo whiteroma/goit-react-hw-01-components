@@ -1,22 +1,16 @@
-import Profile from './Profile';
-import FriendList from './FriendList';
-import Statistics from './Statistics';
-import TransactionHistory from './TransactionHistory';
+import Profile from '../Profile/Profile';
+import FriendList from '../FriendList/FriendList';
+import Statistics from '../Statistics/Statistics';
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
 import friends from '../json/friends.json';
 import data from '../json/data.json';
 import transactions from '../json/transactions.json';
 import user from '../json/user.json';
+import { Container } from './App.styled'
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
+    <Container
     >
       <Profile
         username={user.username}
@@ -35,6 +29,6 @@ export const App = () => {
       <TransactionHistory 
       items={transactions} 
       />
-    </div>
+    </Container>
   );
 };
