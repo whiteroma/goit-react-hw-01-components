@@ -26,7 +26,7 @@ const TransactionHistory = ({ items }) => {
   );
 };
 
-Transaction.propTypes = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       amount: PropTypes.string,
