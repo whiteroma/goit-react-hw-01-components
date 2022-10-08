@@ -6,12 +6,11 @@ import friends from '../json/friends.json';
 import data from '../json/data.json';
 import transactions from '../json/transactions.json';
 import user from '../json/user.json';
-import { Container } from './App.styled'
+import { Container } from './App.styled';
 
 export const App = () => {
   return (
-    <Container
-    >
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -19,16 +18,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics 
-      title="Upload stats" 
-      stats={data} 
-      />
-      <FriendList 
-      friends={friends} 
-      />
-      <TransactionHistory 
-      items={transactions} 
-      />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </Container>
   );
 };
