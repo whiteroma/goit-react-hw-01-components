@@ -1,5 +1,6 @@
 import { Chip, List, FriendsWrapper } from './FriendList.styled';
 import { FaCircle } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => {
   return (
@@ -17,6 +18,14 @@ const FriendList = ({ friends }) => {
       })}
     </FriendsWrapper>
   );
+};
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default FriendList;

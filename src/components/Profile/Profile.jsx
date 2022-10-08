@@ -7,6 +7,7 @@ import {
   ProfileListItem,
   Stats,
 } from './Profile.styled';
+import PropTypes from 'prop-types';
 
 const Profile = ({
   avatar,
@@ -40,6 +41,18 @@ const Profile = ({
       </ProfileList>
     </ProfileWrapper>
   );
+};
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    likes: PropTypes.number,
+    views: PropTypes.number,
+  }),
+  tag: PropTypes.string,
+  username: PropTypes.string,
 };
 
 export default Profile;

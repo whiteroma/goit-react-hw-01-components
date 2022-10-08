@@ -9,4 +9,5 @@ export const Container = styled.div`
   font-size: 40;
   color: #010101;
   padding: 15px;
+  background-color: #208ae01a;
 `;

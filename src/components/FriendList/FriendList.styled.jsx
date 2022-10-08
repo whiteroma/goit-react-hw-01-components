@@ -28,4 +28,5 @@ export const FriendsWrapper = styled.ul`
   font-size: 24px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+    background-color: #fff;
 `;

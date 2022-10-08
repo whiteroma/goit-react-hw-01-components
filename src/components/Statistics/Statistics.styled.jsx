@@ -8,6 +8,7 @@ export const StatsWrapper = styled.section`
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   box-shadow: 0px 2px 4px 2px #aaaaaa50;
   margin: 50px 0 50px 0;
+    background-color: #fff;
 `;
 
 export const StatsList = styled.ul`
