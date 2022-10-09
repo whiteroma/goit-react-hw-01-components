@@ -44,15 +44,15 @@ const Profile = ({
 };
 
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  location: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-    followers: PropTypes.number,
-    likes: PropTypes.number,
-    views: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
   }),
-  tag: PropTypes.string,
-  username: PropTypes.string,
+  tag: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
 };
 
 export default Profile;

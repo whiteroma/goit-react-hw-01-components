@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 const Statistics = ({ stats, title }) => {
   return (
     <StatsWrapper>
-      <Title>{title}</Title>
+      <Title>{title ?? ''}</Title>
 
       <StatsList>
         {stats.map(stat => {
@@ -31,9 +31,9 @@ Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      label: PropTypes.string,
-      percentage: PropTypes.number,
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
     })
   ),
 };
