@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 const Statistics = ({ stats, title }) => {
   return (
     <StatsWrapper>
-      <Title>{title ?? ''}</Title>
+     {title &&( <Title>{title}</Title>)}
 
       <StatsList>
         {stats.map(stat => {
